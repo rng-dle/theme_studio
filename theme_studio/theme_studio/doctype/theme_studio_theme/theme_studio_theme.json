@@ -1,0 +1,615 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:theme_name",
+ "creation": "2026-09-19 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "brand_tab",
+  "theme_name",
+  "description",
+  "cb_brand_1",
+  "brand_name",
+  "sb_logos",
+  "app_logo",
+  "favicon",
+  "cb_brand_2",
+  "login_logo",
+  "login_background_color",
+  "login_background_image",
+  "sb_framework_branding",
+  "hide_help_menu",
+  "hide_frappe_branding",
+  "cb_brand_3",
+  "footer_text",
+  "colours_tab",
+  "color_scheme",
+  "primary_color",
+  "cb_colour_1",
+  "success_color",
+  "warning_color",
+  "danger_color",
+  "sb_surfaces",
+  "page_bg_color",
+  "card_bg_color",
+  "cb_colour_2",
+  "control_bg_color",
+  "border_color",
+  "sb_text_colours",
+  "text_color",
+  "heading_color",
+  "cb_colour_3",
+  "muted_text_color",
+  "sb_chrome",
+  "navbar_bg_color",
+  "navbar_text_color",
+  "cb_colour_4",
+  "sidebar_bg_color",
+  "sidebar_text_color",
+  "sidebar_active_bg_color",
+  "sb_dark",
+  "enable_dark_variant",
+  "dark_primary_color",
+  "dark_page_bg_color",
+  "dark_card_bg_color",
+  "cb_colour_5",
+  "dark_control_bg_color",
+  "dark_border_color",
+  "dark_text_color",
+  "dark_navbar_bg_color",
+  "dark_sidebar_bg_color",
+  "typography_tab",
+  "font_source",
+  "font_family",
+  "google_font_weights",
+  "custom_font_url",
+  "cb_type_1",
+  "heading_font_family",
+  "heading_font_weight",
+  "sb_type_metrics",
+  "base_font_size",
+  "line_height",
+  "cb_type_2",
+  "letter_spacing",
+  "layout_tab",
+  "density",
+  "border_radius",
+  "button_border_radius",
+  "cb_layout_1",
+  "card_shadow",
+  "navbar_height",
+  "sidebar_width",
+  "page_max_width",
+  "advanced_tab",
+  "apply_to_desk",
+  "apply_to_website",
+  "cb_advanced_1",
+  "apply_to_login",
+  "sb_custom_css",
+  "custom_css",
+  "custom_website_css",
+  "sb_generated",
+  "generated_css"
+ ],
+ "fields": [
+  {
+   "fieldname": "brand_tab",
+   "fieldtype": "Tab Break",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "theme_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Theme Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "cb_brand_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Replaces \"Frappe\" in the browser tab and on portal pages.",
+   "fieldname": "brand_name",
+   "fieldtype": "Data",
+   "label": "Brand Name"
+  },
+  {
+   "fieldname": "sb_logos",
+   "fieldtype": "Section Break",
+   "label": "Logos"
+  },
+  {
+   "description": "Shown in the desk navbar. A wide SVG around 120x28 works best.",
+   "fieldname": "app_logo",
+   "fieldtype": "Attach Image",
+   "label": "App Logo"
+  },
+  {
+   "fieldname": "favicon",
+   "fieldtype": "Attach Image",
+   "label": "Favicon"
+  },
+  {
+   "fieldname": "cb_brand_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Falls back to the app logo when empty.",
+   "fieldname": "login_logo",
+   "fieldtype": "Attach Image",
+   "label": "Login Page Logo"
+  },
+  {
+   "fieldname": "login_background_color",
+   "fieldtype": "Color",
+   "label": "Login Background Colour"
+  },
+  {
+   "fieldname": "login_background_image",
+   "fieldtype": "Attach Image",
+   "label": "Login Background Image"
+  },
+  {
+   "fieldname": "sb_framework_branding",
+   "fieldtype": "Section Break",
+   "label": "Framework Branding"
+  },
+  {
+   "description": "Hides the navbar Help dropdown, which links to Frappe's own documentation.",
+   "fieldname": "hide_help_menu",
+   "fieldtype": "Check",
+   "label": "Hide Help Menu"
+  },
+  {
+   "description": "Hides \"Powered by Frappe\" style footers and version links.",
+   "fieldname": "hide_frappe_branding",
+   "fieldtype": "Check",
+   "label": "Hide Frappe Branding"
+  },
+  {
+   "fieldname": "cb_brand_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "footer_text",
+   "fieldtype": "Data",
+   "label": "Footer Text"
+  },
+  {
+   "fieldname": "colours_tab",
+   "fieldtype": "Tab Break",
+   "label": "Colours"
+  },
+  {
+   "default": "Light",
+   "description": "Dark applies the dark palette to every user, regardless of their own theme switcher setting.",
+   "fieldname": "color_scheme",
+   "fieldtype": "Select",
+   "label": "Colour Scheme",
+   "options": "Light\nDark"
+  },
+  {
+   "default": "#2490ef",
+   "description": "Buttons, links, focus rings and the selected sidebar row.",
+   "fieldname": "primary_color",
+   "fieldtype": "Color",
+   "label": "Accent Colour"
+  },
+  {
+   "fieldname": "cb_colour_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "#22a06b",
+   "fieldname": "success_color",
+   "fieldtype": "Color",
+   "label": "Success Colour"
+  },
+  {
+   "default": "#e5a400",
+   "fieldname": "warning_color",
+   "fieldtype": "Color",
+   "label": "Warning Colour"
+  },
+  {
+   "default": "#e24c4b",
+   "fieldname": "danger_color",
+   "fieldtype": "Color",
+   "label": "Danger Colour"
+  },
+  {
+   "fieldname": "sb_surfaces",
+   "fieldtype": "Section Break",
+   "label": "Surfaces"
+  },
+  {
+   "default": "#f4f5f6",
+   "description": "The canvas behind cards and lists.",
+   "fieldname": "page_bg_color",
+   "fieldtype": "Color",
+   "label": "Page Background"
+  },
+  {
+   "default": "#ffffff",
+   "description": "Forms, list rows, dialogs and dashboard cards.",
+   "fieldname": "card_bg_color",
+   "fieldtype": "Color",
+   "label": "Card Background"
+  },
+  {
+   "fieldname": "cb_colour_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "#f4f5f6",
+   "description": "Input fields and select boxes.",
+   "fieldname": "control_bg_color",
+   "fieldtype": "Color",
+   "label": "Control Background"
+  },
+  {
+   "description": "Leave blank to derive it from the page and text colours.",
+   "fieldname": "border_color",
+   "fieldtype": "Color",
+   "label": "Border Colour"
+  },
+  {
+   "fieldname": "sb_text_colours",
+   "fieldtype": "Section Break",
+   "label": "Text"
+  },
+  {
+   "default": "#383838",
+   "fieldname": "text_color",
+   "fieldtype": "Color",
+   "label": "Body Text"
+  },
+  {
+   "fieldname": "heading_color",
+   "fieldtype": "Color",
+   "label": "Heading Text"
+  },
+  {
+   "fieldname": "cb_colour_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Lightened automatically if it would fall below a 4:1 contrast ratio on the card background.",
+   "fieldname": "muted_text_color",
+   "fieldtype": "Color",
+   "label": "Muted Text"
+  },
+  {
+   "fieldname": "sb_chrome",
+   "fieldtype": "Section Break",
+   "label": "Navbar and Sidebar"
+  },
+  {
+   "fieldname": "navbar_bg_color",
+   "fieldtype": "Color",
+   "label": "Navbar Background"
+  },
+  {
+   "description": "Leave blank and it is measured against the navbar background for contrast.",
+   "fieldname": "navbar_text_color",
+   "fieldtype": "Color",
+   "label": "Navbar Text"
+  },
+  {
+   "fieldname": "cb_colour_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sidebar_bg_color",
+   "fieldtype": "Color",
+   "label": "Sidebar Background"
+  },
+  {
+   "description": "Leave blank and it is measured against the sidebar background for contrast.",
+   "fieldname": "sidebar_text_color",
+   "fieldtype": "Color",
+   "label": "Sidebar Text"
+  },
+  {
+   "fieldname": "sidebar_active_bg_color",
+   "fieldtype": "Color",
+   "label": "Sidebar Selected Row"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_dark",
+   "fieldtype": "Section Break",
+   "label": "Dark Mode"
+  },
+  {
+   "description": "Adds a dark palette for users who switch their desk to dark. Ignored when the colour scheme above is set to Dark.",
+   "fieldname": "enable_dark_variant",
+   "fieldtype": "Check",
+   "label": "Enable Dark Variant"
+  },
+  {
+   "depends_on": "enable_dark_variant",
+   "fieldname": "dark_primary_color",
+   "fieldtype": "Color",
+   "label": "Dark Accent"
+  },
+  {
+   "default": "#141414",
+   "depends_on": "enable_dark_variant",
+   "fieldname": "dark_page_bg_color",
+   "fieldtype": "Color",
+   "label": "Dark Page Background"
+  },
+  {
+   "default": "#1c1c1c",
+   "depends_on": "enable_dark_variant",
+   "fieldname": "dark_card_bg_color",
+   "fieldtype": "Color",
+   "label": "Dark Card Background"
+  },
+  {
+   "fieldname": "cb_colour_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "enable_dark_variant",
+   "fieldname": "dark_control_bg_color",
+   "fieldtype": "Color",
+   "label": "Dark Control Background"
+  },
+  {
+   "depends_on": "enable_dark_variant",
+   "fieldname": "dark_border_color",
+   "fieldtype": "Color",
+   "label": "Dark Border"
+  },
+  {
+   "default": "#e8e8e8",
+   "depends_on": "enable_dark_variant",
+   "fieldname": "dark_text_color",
+   "fieldtype": "Color",
+   "label": "Dark Body Text"
+  },
+  {
+   "depends_on": "enable_dark_variant",
+   "fieldname": "dark_navbar_bg_color",
+   "fieldtype": "Color",
+   "label": "Dark Navbar Background"
+  },
+  {
+   "depends_on": "enable_dark_variant",
+   "fieldname": "dark_sidebar_bg_color",
+   "fieldtype": "Color",
+   "label": "Dark Sidebar Background"
+  },
+  {
+   "fieldname": "typography_tab",
+   "fieldtype": "Tab Break",
+   "label": "Typography"
+  },
+  {
+   "default": "System",
+   "fieldname": "font_source",
+   "fieldtype": "Select",
+   "label": "Font Source",
+   "options": "System\nGoogle Fonts\nCustom URL"
+  },
+  {
+   "depends_on": "eval:doc.font_source != 'System'",
+   "description": "Family name only, for example Inter or IBM Plex Sans.",
+   "fieldname": "font_family",
+   "fieldtype": "Data",
+   "label": "Font Family"
+  },
+  {
+   "default": "400;500;600;700",
+   "depends_on": "eval:doc.font_source == 'Google Fonts'",
+   "fieldname": "google_font_weights",
+   "fieldtype": "Data",
+   "label": "Font Weights"
+  },
+  {
+   "depends_on": "eval:doc.font_source == 'Custom URL'",
+   "description": "Must be an https stylesheet URL.",
+   "fieldname": "custom_font_url",
+   "fieldtype": "Data",
+   "label": "Custom Font URL"
+  },
+  {
+   "fieldname": "cb_type_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Leave blank to use the body font for headings too.",
+   "fieldname": "heading_font_family",
+   "fieldtype": "Data",
+   "label": "Heading Font Family"
+  },
+  {
+   "default": "600",
+   "fieldname": "heading_font_weight",
+   "fieldtype": "Select",
+   "label": "Heading Weight",
+   "options": "400\n500\n600\n700\n800"
+  },
+  {
+   "fieldname": "sb_type_metrics",
+   "fieldtype": "Section Break",
+   "label": "Metrics"
+  },
+  {
+   "default": "13",
+   "description": "Every other size in the desk scales from this. Frappe's own default is 13.",
+   "fieldname": "base_font_size",
+   "fieldtype": "Int",
+   "label": "Base Font Size (px)"
+  },
+  {
+   "default": "1.5",
+   "fieldname": "line_height",
+   "fieldtype": "Float",
+   "label": "Line Height",
+   "precision": "2"
+  },
+  {
+   "fieldname": "cb_type_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "For example 0.01em or -0.2px.",
+   "fieldname": "letter_spacing",
+   "fieldtype": "Data",
+   "label": "Letter Spacing"
+  },
+  {
+   "fieldname": "layout_tab",
+   "fieldtype": "Tab Break",
+   "label": "Layout"
+  },
+  {
+   "default": "Default",
+   "description": "Scales every padding and margin in the desk.",
+   "fieldname": "density",
+   "fieldtype": "Select",
+   "label": "Density",
+   "options": "Compact\nDefault\nSpacious"
+  },
+  {
+   "default": "6",
+   "fieldname": "border_radius",
+   "fieldtype": "Int",
+   "label": "Corner Radius (px)"
+  },
+  {
+   "description": "Leave at 0 to match the corner radius above.",
+   "fieldname": "button_border_radius",
+   "fieldtype": "Int",
+   "label": "Button Radius (px)"
+  },
+  {
+   "fieldname": "cb_layout_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Subtle",
+   "fieldname": "card_shadow",
+   "fieldtype": "Select",
+   "label": "Card Shadow",
+   "options": "None\nSubtle\nMedium\nStrong"
+  },
+  {
+   "default": "60",
+   "fieldname": "navbar_height",
+   "fieldtype": "Int",
+   "label": "Navbar Height (px)"
+  },
+  {
+   "default": "240",
+   "fieldname": "sidebar_width",
+   "fieldtype": "Int",
+   "label": "Sidebar Width (px)"
+  },
+  {
+   "default": "0",
+   "description": "0 keeps Frappe's full-width layout.",
+   "fieldname": "page_max_width",
+   "fieldtype": "Int",
+   "label": "Page Max Width (px)"
+  },
+  {
+   "fieldname": "advanced_tab",
+   "fieldtype": "Tab Break",
+   "label": "Advanced"
+  },
+  {
+   "default": "1",
+   "fieldname": "apply_to_desk",
+   "fieldtype": "Check",
+   "label": "Apply to Desk"
+  },
+  {
+   "description": "Themes the public portal. ERPNext sites with a heavily customised website may prefer Frappe's own Website Theme instead.",
+   "fieldname": "apply_to_website",
+   "fieldtype": "Check",
+   "label": "Apply to Website"
+  },
+  {
+   "fieldname": "cb_advanced_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "apply_to_login",
+   "fieldtype": "Check",
+   "label": "Apply to Login Page"
+  },
+  {
+   "fieldname": "sb_custom_css",
+   "fieldtype": "Section Break",
+   "label": "Custom CSS"
+  },
+  {
+   "description": "Appended last, so it overrides everything above. Script tags and non-https imports are stripped on save.",
+   "fieldname": "custom_css",
+   "fieldtype": "Code",
+   "label": "Desk CSS",
+   "options": "CSS"
+  },
+  {
+   "depends_on": "apply_to_website",
+   "fieldname": "custom_website_css",
+   "fieldtype": "Code",
+   "label": "Website CSS",
+   "options": "CSS"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_generated",
+   "fieldtype": "Section Break",
+   "label": "Generated Output"
+  },
+  {
+   "description": "Read-only. What this theme compiles to, regenerated on every save.",
+   "fieldname": "generated_css",
+   "fieldtype": "Code",
+   "label": "Generated CSS",
+   "no_copy": 1,
+   "options": "CSS",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-09-19 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Theme Studio",
+ "name": "Theme Studio Theme",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

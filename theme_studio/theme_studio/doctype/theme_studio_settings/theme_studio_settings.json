@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "creation": "2026-09-19 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "active_theme",
+  "cb_1",
+  "last_applied_on",
+  "current_hash"
+ ],
+ "fields": [
+  {
+   "description": "Turn this off to return every user to stock Frappe styling without deleting anything.",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Theming Enabled"
+  },
+  {
+   "description": "The theme every user on this site sees.",
+   "fieldname": "active_theme",
+   "fieldtype": "Link",
+   "label": "Active Theme",
+   "options": "Theme Studio Theme"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_applied_on",
+   "fieldtype": "Datetime",
+   "label": "Last Applied On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_hash",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Current Hash",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-09-19 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Theme Studio",
+ "name": "Theme Studio Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

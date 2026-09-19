@@ -1,0 +1,23 @@
+[project]
+name = "theme_studio"
+authors = [{ name = "Nastiliq", email = "hello@example.com" }]
+description = "Site-wide theming and white-labelling for the Frappe/ERPNext desk"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = []
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "theme_studio"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"
